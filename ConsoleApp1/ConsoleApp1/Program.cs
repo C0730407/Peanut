@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ConsoleApp1
@@ -10,7 +11,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Gagan rules the IT universe");
+            Console.WriteLine("Gagan rules the IT universe");Download();
+        }
+
+        static void Download()
+        {
+            Thread.Sleep(4000);
+            Console.WriteLine("Download Complete");
+            Console.ReadLine();
         }
     }
 }
