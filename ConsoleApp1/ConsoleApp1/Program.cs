@@ -20,4 +20,11 @@ namespace ConsoleApp1
         }
 
     }
+    class Network
+    {
+        static public Task Download()
+        {
+            return Task.Run(() => Thread.Sleep(3000));
+        }
+    }
 }
