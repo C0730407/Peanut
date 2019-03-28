@@ -16,13 +16,8 @@ namespace ConsoleApp1
 
         static void Download()
         {
-            Task.Run(() =>
-            {
-                Thread.Sleep(3000);
-                Console.WriteLine("Download Complete");
-            });
-            
-            
+            Network.Download();
         }
+
     }
 }
