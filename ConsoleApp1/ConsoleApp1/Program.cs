@@ -16,9 +16,13 @@ namespace ConsoleApp1
 
         static void Download()
         {
-            Thread.Sleep(4000);
-            Console.WriteLine("Download Complete");
-            Console.ReadLine();
+            Task.Run(() =>
+            {
+                Thread.Sleep(3000);
+                Console.WriteLine("Download Complete");
+            });
+            
+            
         }
     }
 }
